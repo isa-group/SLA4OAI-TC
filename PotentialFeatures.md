@@ -36,13 +36,12 @@ An open list of topics and ideas to be discussed in the group.
 - OAS spect can optionally link to an SLA definition.
 
 ## Agreed Features in Scope
-
-- TBD.
+  
+- See [current draft proposal for v1](https://github.com/isa-group/SLA4OAI-TC/edit/master/FirstMinimalSpecification.md)
 
 ## Discarded Features in Scope
 
 - TBD.
-
 
 ## Proposed Ideas
 

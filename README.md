@@ -37,10 +37,25 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
+### 2019-02-19
+*Participants:  Nikhil Kolekar (Paypal), Isaac Hepworth (Google), Mike Ralphson, Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+In this meeting Nikhil presented his PoV about SLAs and APIs given his experience in operating and creating APIs at scale inside Paypal. Summary of the aspect covered follows:
+
+- API Performance and SLOs
+- Drivers for Customer Experience
+- SLO for APIs
+- Metrics
+- Measurement
+- Monitoring
+
+[Video recording (42 minutes)](https://drive.google.com/open?id=1DR6z103Q1YU589euhz1BCcd8YXCWD5k1)
+
+
 ### 2018-12-03
 *Participants: Madhurranjan Mohaan (Google), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 
-In this meeting Madhurranjan presented its global point of view about SLAs in APIs:
+In this meeting Madhurranjan presented his global point of view about SLAs in APIs:
 
 Introduction of the concepts:
 

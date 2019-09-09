@@ -12,6 +12,7 @@ In the next sections, you can find the meetings, minutes, material, and the road
  - 2017 - Extension is presented to OpenAPI Technical Specification Committee that expressed their positive feedback about it. 
  - 2018 - OpenAPI Governance Board aproved the creation of a *Specific Interest Group* to coordinate this extension. This group is originally formed by different members from the OAI consortium.
  - 2018 - The specific interest group starts its activities.
+ - 2019 - Define a [common view](docs/SLA-API-Industry-ESEC2019.pdf) on the conceptual model and priorities to be addressed.
  
 ## Roadmap
 
@@ -20,6 +21,10 @@ Proposed milestones for the specification:
  - **2020Q1** - Open call for tooling/community feedback
  - **2020Q1** - Discuss new v2 features
  - **2020Q3/4** - Work on v2 of SLA4OAI
+
+## Consolidated Material
+
+[The Role of Limitations and SLAs in the API Industry (SLA4OAI-TC)](docs/SLA-API-Industry-ESEC2019.pdf) presented at the Industrial Track of the 27th ACM Joint European Software Engineering Conferenceand Symposium on the Foundations of Software Engineering (ESEC/FSE ’19)
 
 ## Working Material
 [SLA4OAI Manifest](./Manifest.md). This document contains the key foundational decisions to guide SLA4OAI.

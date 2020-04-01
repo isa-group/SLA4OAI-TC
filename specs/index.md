@@ -12,7 +12,6 @@ Figure 1 describes the metamodel used.
 
 ![Figure 1. Metamodel](metamodel.png)
 
-
 ### 1. Extension Format
 
 SLA extension can be mapped in an external YAML or JSON file. The OpenAPI specification main document can link to SLA defitions using the standard extension and `$ref` linking mechanims:
@@ -32,13 +31,26 @@ sla: 1.0
 context:
   id: petstore-sample
   type: plans
-  api: ./petstore-service.yml
+  api:
+    $ref: ./petstore-service.yml
   provider: ISAGroup
+```
 
-infrastructure:
-  supervisor: http://supervisor.sla4oai.governify.io/v1/
-  monitor: http://monitor.sla4oai.governify.io/v1/
+### 2. Header
 
+SLA defitions (following the same guidelines applied in OpenAPI) starts with describing the document type `sla` and the version following [Semantic Versioning](https://semver.org/) conventions.
+
+### 3. Context
+
+Context block provide metadata to describe the type of SLA information to be provided.
+
+- `id` provide a unique name (_mandatory_).
+- `type` can take the values `plans` or `aggrement` (_mandatory_).
+- `provider` describe the organization providing the service (_optional_).
+
+### 4. Metrics
+
+```yaml
 metrics:
   animalTypes:
     type: integer
@@ -61,27 +73,6 @@ metrics:
     resolution: consumption
 ```
 
-### 2. Header
-
-SLA defitions (following the same guidelines applied in OpenAPI) starts with describing the document type `sla` and the version following [Semantic Versioning](https://semver.org/) conventions.
-
-### 3. Context
-
-Context block provide metadata to describe the type of SLA information to be provided.
-
-- `id` provide a unique name.
-- `type` can take the values `plans` or `aggrement`.
-- `provider` describe the organization providing the service.
-
-### 4. Infrastructure
-
-Infrastructure block describes two optional endpoints to describe:
-
-- `supervisor` URL for SLA enforcing middleware
-- `monitor` URL for SLA checking middleware
-
-### 5. Metrics
-
 Metrics sections describes the relevant tecnical indcators and business metrics for the SLA.
 
 There could be pure technical ones like response time, throughtput, or band-width but also business ones like sales per period, usage metrics, etc.
@@ -90,11 +81,13 @@ For each metric to be defined:
 
 - `type` and `format` describes the data-type following same conventions as OpenAPI 3.x.
 - `description` provides a label for the metric been defined.
-- `resolution` could be `check` or `comsuption` (to be explained)
+- `resolution` could be `check` or `consumption` (_optional_).
+  - `check` is a precondition that can be evaluated before granting permission for the service (no need to evaluate the payload).
+  - `consumption` is a check that needs to inspect the message to decide if limits will be overpassed or not. 
+
 - `unit` (when applicable) describes the units to be used for the measure. e.g. `ms`, `req/s`, etc.
 
-
-### 6. Pricing
+### 5. Pricing
 
 Pricing block describes a price model fon an especific plan. Describing the `cost`, the `currency` (expresed in [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) form) and the billing period `billing`.
 
@@ -103,40 +96,23 @@ pricing:
   cost: 0
   currency: EUR
   billing: monthly
-availability: R/00:00:00Z/15:00:00Z
-configuration:
-  filteringType: none
-  xmlFormat: 'false'
 ```
 
-### 7. Availability
+### 6. Availability
+
+```yaml
+availability: R/00:00:00Z/15:00:00Z
+```
 
 Availiability, when applicable, describes a time-windows where the API is available (using the [ISO 8601 Time Intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals) format).
 
-### 8. Configuration
+### 7. Quota Limits
 
-To be explained (Pablo)
+Quotas limits are resource contraints imposed globally (e.g. _max. disk usage_) or scoped to *static* temporal windows (e.g. _holidays as 24 labout days per year_ - in a period of a *natural year*).
 
+For a formal definition of Rates and Quotas see [1].
 
 ```yaml
-quotas:
-  /pets:
-    get:
-      requests:
-        - max: 10
-          period: minutely
-          scope: account
-        - max: 40
-          period: hourly
-          scope: tenant
-    post:
-      requests:
-        - max: 3
-          period: minutely
-      resourceInstances:
-        - max: 5
-      animalTypes:
-        - max: 2
 rates:
   /pets/{id}:
     get:
@@ -144,8 +120,6 @@ rates:
         - max: 1
           period: secondly
 ```
-
-### 9. Quotas
 
 Quotas section describes limits to endpoints based on expression over metrics. Samples:
 
@@ -155,9 +129,20 @@ Quotas section describes limits to endpoints based on expression over metrics. S
 - maximum of 5 resource instances on `POST /pets`
 - maximum of 2 animal types on `POST /pets`
 
-### 10. Rates
+### 8. Rate Limits
 
-Rate section describes limits to endpoints based on expression over metrics for a window time. Samples:
+Rates section describes limits to endpoints based on expression measured with respect to metrics for a *dynamic* window time.
+
+```yaml
+rates:
+  /pets/{id}:
+    get:
+      requests:
+        - max: 1
+          period: secondly
+```
+
+Samples:
 
 - maximum 1 request per second to `GET /pets/{id}`
 
@@ -170,7 +155,7 @@ guarantees:
         window: dynamic
 ```
 
-### 11. Guarantees
+### 9. Guarantees
 
 Description of the API warranties commitment by the service provider.
 
@@ -178,10 +163,9 @@ Example:
 
 - main objective: response time under 800 ms (measured daily).
 
-### 12. Plans
+### 10. Plans
 
 Describes different plans including different prices and level of service. Level of service can be improved or limited depending of the plan.
-
 
 ```yaml
 plans:
@@ -224,3 +208,19 @@ plans:
             period: daily
             window: dynamic
 ```
+
+### 11. Plans application
+
+First `base` keyword is proposed as the common base plan. All limits and guaraties applied to base applies to all plans.
+
+Then, a specific plan inherits definitions from `base` and can override any limit to make it more concrete or relaxed.
+
+### 12. Keywords
+
+- `base` is used as the common properties applicable to all plans (can be overriden).
+- `global` is used in the guarantees section to describe API common guarantiees (cab be overriden by specific plans).
+
+## References
+
+1. An Analysis of RESTful APIs Offerings
+in the Industry. A. Gamez-Diaz(B), P. Fernandez, and A. Ruiz-Cortes. In M. Maximilien et al. (Eds.): ICSOC 2017, LNCS 10601, pp. 589–604, 2017. DOI: [10.1007/978-3-319-69035-3_43](https://doi.org/10.1007/978-3-319-69035-3_43)

@@ -17,10 +17,10 @@ In the next sections, you can find the meetings, minutes, material, and the road
 ## Roadmap
 
 Proposed milestones for the specification:
- - **2019Q4** - Proposal of v1 of SLA4OAI
- - **2020Q1** - Open call for tooling/community feedback
- - **2020Q1** - Discuss new v2 features
- - **2020Q3/4** - Work on v2 of SLA4OAI
+ - **2020Q2** - Proposal of v1 of SLA4OAI
+ - **2020Q3** - Open call for tooling/community feedback
+ - **2020Q4** - Discuss new v2 features
+ - **2021Q1/2** - Work on v2 of SLA4OAI
 
 ## Consolidated Material
 

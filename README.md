@@ -42,6 +42,16 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
+### 2020-04-01
+*Participants:  Nikhil Kolekar (Paypal), Isaac Hepworth (Google), Mike Ralphson, Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+In this meeting a proposal for contents of a first minimal viable spec and the process to leverage it as a formal extension to OAS comitee:
+
+#### Material
+ - [Video of the call](https://drive.google.com/file/d/1IYhH1UlGa5z6uHI70VF_QpBEqYLqazOS/view?usp=sharing)
+ - [Slides](https://drive.google.com/open?id=1tAkegexohOlW6-Sn-Q3q12kkg_5pPvsF06qeB7bIlns)
+
+
 ### 2019-02-19
 *Participants:  Nikhil Kolekar (Paypal), Isaac Hepworth (Google), Mike Ralphson, Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 

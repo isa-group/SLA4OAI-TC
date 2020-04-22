@@ -1,4 +1,4 @@
-# SLA4OAI
+# SLA4OAI (v1.0.0 DRAFT)
 
 ## Minimal Specification Proposal
 

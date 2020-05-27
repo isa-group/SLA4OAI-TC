@@ -63,10 +63,6 @@ metrics:
   requests:
     type: "int64"
     description: "Number of requests"
-  responseTimeMs:
-    type: "double"
-    unit: "ms"
-    description: "Response time in milliseconds"
 ```
 
 Metrics sections describes the relevant tecnical indcators and business metrics for the SLA.

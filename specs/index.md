@@ -56,21 +56,17 @@ metrics:
     type: integer
     format: int64
     description: Number of different animal types.
-    resolution: check
   resourceInstances:
     type: integer
     format: int64
     description: Number of pet resources
-    resolution: consumption
   requests:
     type: "int64"
     description: "Number of requests"
-    resolution: consumption
   responseTimeMs:
     type: "double"
     unit: "ms"
     description: "Response time in milliseconds"
-    resolution: consumption
 ```
 
 Metrics sections describes the relevant tecnical indcators and business metrics for the SLA.
@@ -81,10 +77,6 @@ For each metric to be defined:
 
 - `type` and `format` describes the data-type following same conventions as OpenAPI 3.x.
 - `description` provides a label for the metric been defined.
-- `resolution` could be `check` or `consumption` (_optional_).
-  - `check` is a precondition that can be evaluated before granting permission for the service (no need to evaluate the payload).
-  - `consumption` is a check that needs to inspect the message to decide if limits will be overpassed or not. 
-
 - `unit` (when applicable) describes the units to be used for the measure. e.g. `ms`, `req/s`, etc.
 
 ### 5. Pricing

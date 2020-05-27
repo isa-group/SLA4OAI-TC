@@ -173,7 +173,7 @@ plans:
 
 ### 11. Plans application
 
-First `base` keyword is proposed as the common base plan. All limits and guaraties applied to base applies to all plans.
+First `base` keyword is proposed as the common base plan. All limits in base plan apply to all plans.
 
 Then, a specific plan inherits definitions from `base` and can override any limit to make it more concrete or relaxed.
 

@@ -157,10 +157,8 @@ plans:
           requests:
             - max: 20
               period: minutely
-              scope: account
             - max: 100
               period: hourly
-              scope: tenant
         post:
           requests:
             - max: 100

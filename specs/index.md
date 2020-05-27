@@ -134,26 +134,6 @@ rates:
           period: secondly
 ```
 
-Samples:
-
-- maximum 1 request per second to `GET /pets/{id}`
-
-```yaml
-guarantees:
-  global:
-    global:
-      - objective: responseTimeMs <= 800
-        period: daily
-        window: dynamic
-```
-
-### 9. Guarantees
-
-Description of the API warranties commitment by the service provider.
-
-Example:
-
-- main objective: response time under 800 ms (measured daily).
 
 ### 10. Plans
 
@@ -193,12 +173,6 @@ plans:
             - max: 500
           animalTypes:
             - max: 5
-    guarantees:
-      global:
-        global:
-          - objective: responseTimeMs <= 250
-            period: daily
-            window: dynamic
 ```
 
 ### 11. Plans application
@@ -210,7 +184,6 @@ Then, a specific plan inherits definitions from `base` and can override any limi
 ### 12. Keywords
 
 - `base` is used as the common properties applicable to all plans (can be overriden).
-- `global` is used in the guarantees section to describe API common guarantiees (cab be overriden by specific plans).
 
 ## References
 

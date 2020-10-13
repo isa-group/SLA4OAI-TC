@@ -56,21 +56,13 @@ metrics:
     type: integer
     format: int64
     description: Number of different animal types.
-    resolution: check
   resourceInstances:
     type: integer
     format: int64
     description: Number of pet resources
-    resolution: consumption
   requests:
     type: "int64"
     description: "Number of requests"
-    resolution: consumption
-  responseTimeMs:
-    type: "double"
-    unit: "ms"
-    description: "Response time in milliseconds"
-    resolution: consumption
 ```
 
 Metrics sections describes the relevant tecnical indcators and business metrics for the SLA.
@@ -81,10 +73,6 @@ For each metric to be defined:
 
 - `type` and `format` describes the data-type following same conventions as OpenAPI 3.x.
 - `description` provides a label for the metric been defined.
-- `resolution` could be `check` or `consumption` (_optional_).
-  - `check` is a precondition that can be evaluated before granting permission for the service (no need to evaluate the payload).
-  - `consumption` is a check that needs to inspect the message to decide if limits will be overpassed or not. 
-
 - `unit` (when applicable) describes the units to be used for the measure. e.g. `ms`, `req/s`, etc.
 
 ### 5. Pricing
@@ -142,26 +130,6 @@ rates:
           period: secondly
 ```
 
-Samples:
-
-- maximum 1 request per second to `GET /pets/{id}`
-
-```yaml
-guarantees:
-  global:
-    global:
-      - objective: responseTimeMs <= 800
-        period: daily
-        window: dynamic
-```
-
-### 9. Guarantees
-
-Description of the API warranties commitment by the service provider.
-
-Example:
-
-- main objective: response time under 800 ms (measured daily).
 
 ### 10. Plans
 
@@ -189,10 +157,8 @@ plans:
           requests:
             - max: 20
               period: minutely
-              scope: account
             - max: 100
               period: hourly
-              scope: tenant
         post:
           requests:
             - max: 100
@@ -201,12 +167,6 @@ plans:
             - max: 500
           animalTypes:
             - max: 5
-    guarantees:
-      global:
-        global:
-          - objective: responseTimeMs <= 250
-            period: daily
-            window: dynamic
 ```
 
 ### 11. Plans application
@@ -218,7 +178,6 @@ Then, a specific plan inherits definitions from `base` and can override any limi
 ### 12. Keywords
 
 - `base` is used as the common properties applicable to all plans (can be overriden).
-- `global` is used in the guarantees section to describe API common guarantiees (cab be overriden by specific plans).
 
 ## References
 

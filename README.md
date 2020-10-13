@@ -49,9 +49,6 @@ This section contains the key content and minutes from the different calls.
  - [Slides](https://docs.google.com/presentation/d/1m0Bl_htl4UAo52DPEMGzlpkBrfwuy0LRxLNaOOpa1CQ/edit?usp=sharing)
 
 
-## Calls
-This section contains the key content and minutes from the different calls.
-
 ### 2020-04-01
 *Participants:  Nikhil Kolekar (Independent), Emmanuel Paraskakis (Smartbear), Phil Sturgeon (Spotlight), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 

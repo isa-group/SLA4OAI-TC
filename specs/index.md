@@ -148,9 +148,6 @@ plans:
     availability: R/00:00:00Z/23:59:59Z
     pricing:
       cost: 50
-    configuration:
-      filteringType: multipleTags
-      xmlFormat: 'true'
     quotas:
       /pets:
         get:

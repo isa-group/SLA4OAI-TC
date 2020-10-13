@@ -148,9 +148,6 @@ plans:
     availability: R/00:00:00Z/23:59:59Z
     pricing:
       cost: 50
-    configuration:
-      filteringType: multipleTags
-      xmlFormat: 'true'
     quotas:
       /pets:
         get:
@@ -183,3 +180,5 @@ Then, a specific plan inherits definitions from `base` and can override any limi
 
 1. An Analysis of RESTful APIs Offerings
 in the Industry. A. Gamez-Diaz(B), P. Fernandez, and A. Ruiz-Cortes. In M. Maximilien et al. (Eds.): ICSOC 2017, LNCS 10601, pp. 589–604, 2017. DOI: [10.1007/978-3-319-69035-3_43](https://doi.org/10.1007/978-3-319-69035-3_43)
+
+2. The Role of SLA in the API Insdustry. SLA4OAI-TC Members. [Full Paper](docs/2019_ESEC_FSE_IndustryTrack_The_role_of_SLAs_in_the_API_industry.pdf)

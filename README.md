@@ -42,6 +42,16 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
+### 2020-07-14
+
+#### Material
+ - [Video of the call](https://drive.google.com/file/d/1asNfdVA9_bzzWEor3VlytQXngX1L9idF/view?usp=sharing)
+ - [Slides](https://docs.google.com/presentation/d/1m0Bl_htl4UAo52DPEMGzlpkBrfwuy0LRxLNaOOpa1CQ/edit?usp=sharing)
+
+
+## Calls
+This section contains the key content and minutes from the different calls.
+
 ### 2020-04-01
 *Participants:  Nikhil Kolekar (Independent), Emmanuel Paraskakis (Smartbear), Phil Sturgeon (Spotlight), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 

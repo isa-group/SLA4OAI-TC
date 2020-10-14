@@ -10,7 +10,7 @@ The main objective is to foster discussion about the essential concepts and crea
 
 Figure 1 describes the metamodel used.
 
-![Figure 1. Metamodel](metamodel.png)
+![Figure 1. Metamodel](metamodel.svg)
 
 ### 1. Extension Format
 

@@ -43,6 +43,9 @@ Perspectives of SLA from the different participants:
 This section contains the key content and minutes from the different calls.
 
 ### 2020-07-14
+*Participants:  Nikhil Kolekar (Independent), 	Dave O'Neil (Apimetrics), Paul Cray (Apimetrics), Madhurranjan Mohaan (Google), Hyungjun Lim  (Google), Khushan Adatiya (Google), Fran Mendez (AsyncAPI), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+This session introduced the work by Paul and Dave (Apimetrics). Later the team review the current minimal specification, procedure to follow and discussion of suggested changes to be made.
 
 #### Material
  - [Video of the call](https://drive.google.com/file/d/1asNfdVA9_bzzWEor3VlytQXngX1L9idF/view?usp=sharing)
@@ -52,7 +55,7 @@ This section contains the key content and minutes from the different calls.
 ### 2020-04-01
 *Participants:  Nikhil Kolekar (Independent), Emmanuel Paraskakis (Smartbear), Phil Sturgeon (Spotlight), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 
-In this meeting a proposal for contents of a first minimal viable spec and the process to leverage it as a formal extension to OAS comitee:
+In this meeting a proposal for contents of a first minimal viable spec and the process to leverage it as a formal extension to OAS comitee.
 
 #### Material
  - [Video of the call](https://drive.google.com/file/d/1IYhH1UlGa5z6uHI70VF_QpBEqYLqazOS/view?usp=sharing)

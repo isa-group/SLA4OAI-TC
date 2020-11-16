@@ -47,10 +47,6 @@ This section contains the key content and minutes from the different calls.
 #### Material
  - [Video of the call](https://drive.google.com/file/d/1d4moGcT1PrP29pWU4yKenmIutXPhuK2f/view?usp=sharing)
 
-#### Material
- - [Video of the call](https://drive.google.com/file/d/1asNfdVA9_bzzWEor3VlytQXngX1L9idF/view?usp=sharing)
- - [Slides](https://docs.google.com/presentation/d/1m0Bl_htl4UAo52DPEMGzlpkBrfwuy0LRxLNaOOpa1CQ/edit?usp=sharing)
-
 ### 2020-07-14
 *Participants:  Nikhil Kolekar (Independent), 	Dave O'Neil (Apimetrics), Paul Cray (Apimetrics), Madhurranjan Mohaan (Google), Hyungjun Lim  (Google), Khushan Adatiya (Google), Fran Mendez (AsyncAPI), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 

@@ -42,7 +42,7 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
-### 2020-11-16
+### 2020-10-29
 
 *Participants: Nikhil Kolekar (Independent), Paul Cray (Apimetrics), Khushan Adatiya (Google), Phil Sturgeon (SpotLight), Kin Lane (Postman), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
 

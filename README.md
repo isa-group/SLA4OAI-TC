@@ -44,7 +44,17 @@ This section contains the key content and minutes from the different calls.
 
 ### 2020-11-16
 
+*Participants: Nikhil Kolekar (Independent), Paul Cray (Apimetrics), Khushan Adatiya (Google), Phil Sturgeon (SpotLight), Kin Lane (Postman), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+Minutes of the meeting and action plan:
+- Agreement to keep pushing on the minimal spec to be complete as soon as possible. (Pablo)
+- Awaiting for PRs and proposal for the next meeting.
+- Nikhil commitment to contribute with a PR to incorporate support for subscriptions.
+- Study the possibilty to rewrite as an Overlay. (Pedro & Phil)
+- Khushan to catch up and recopilate contributions from Google.
+
 #### Material
+
  - [Video of the call](https://drive.google.com/file/d/1d4moGcT1PrP29pWU4yKenmIutXPhuK2f/view?usp=sharing)
 
 ### 2020-07-14

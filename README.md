@@ -42,6 +42,25 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
+### 2020.12.17
+
+*Participants: Tim Burks (Apigee), Paul Cray (Apimetrics), Madhurranjan Mohaan (Google), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+Minutes of the meeting:
+1. Discused Issues and Pull Request:
+
+  - [7](https://github.com/isa-group/SLA4OAI-Specification/issues/7) Simplify language proposal by Tim. Accepted. Pablo made a [PR 13](https://github.com/isa-group/SLA4OAI-Specification/pull/13) for it.
+  - [8](https://github.com/isa-group/SLA4OAI-Specification/issues/8) Global rates and quotas: reuse mechanism. Accepted. Tim to prepare a PR using a [globbing strategy](https://en.wikipedia.org/wiki/Glob_(programming)). 
+  - [9](https://github.com/isa-group/SLA4OAI-Specification/issues/9) -> [PR 12](https://github.com/isa-group/SLA4OAI-Specification/pull/12) merged.
+  - [10](https://github.com/isa-group/SLA4OAI-Specification/issues/10) -> [PR 11](https://github.com/isa-group/SLA4OAI-Specification/pull/11) merged.
+  
+2. Specification looks good enough to participant to be scalated to TSC and open to public to call for feedback.
+3. Next meeting proposed for Thursday: 2021.01.14 
+
+#### Material
+
+- [Video of the call](https://drive.google.com/file/d/1TY2jwAtfzC53MvfZF-fvIVE85FfgKXuz/view)
+
 ### 2020-10-29
 
 *Participants: Nikhil Kolekar (Independent), Paul Cray (Apimetrics), Khushan Adatiya (Google), Phil Sturgeon (SpotLight), Kin Lane (Postman), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*

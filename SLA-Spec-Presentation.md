@@ -1,0 +1,96 @@
+# Service Level Agreement Spec for APIs
+### OpenAPI SIG
+---
+
+# SLA Spec
+
+- DSL for defining a set of metrics and constraints regarding service availability, quality of the service like minimal and maximal throughput, latency, quotas, rate-limits
+- Declarative YAML document
+- Meant to be used alongside OpenAPI, which can't (and should not) describe runtime aspects
+
+---
+
+![75%](https://www.openapis.org/wp-content/uploads/sites/3/2021/03/SLA-concepts.png)
+
+---
+
+# Why now?
+
+- API & Services Proliferation!
+- Hard to keep track of configuration in each deployment, each environment
+- Hard to replicate and review configurations
+- Need a precise way to specify runtime behavior, one that can be checked in, diffed and used for testing, repeatably
+- Avoid misconfiguration, which leaves your Service open to Security and Availability problems
+
+---
+
+# How you would use it
+
+1. Start with a document specifying what you need
+2. Review with your team for correctness
+3. Document becomes part of deployment
+4. Validate using automation
+5. Use as basis for next iteration so you can have a precise record of each state
+
+---
+# How it benefits API Consumers
+
+- Accurate SLA/Plans Documentation, know what to expect
+- Clients can understand beyter how to use a Service
+- 3d party assurance for stated availability
+- Understand reliability
+
+---
+
+
+# How it benefits DevOps
+- Service/Gateway Configuration
+- SLA/Plans Testing, Validation, Compliance
+- Helps review and rollback configuration changes
+
+---
+
+# How it benefits Business
+- Enforces limits
+- Accountability and Precision around plans & monetization
+- Easier to evolve monetization and plans
+
+---
+
+# How it Benefits Toolmakers
+
+- Provide more value in your products
+- Render customized documentation for each environment
+- Users can use and deploy more gateways since it's easier to cogifre and control them
+
+
+---
+
+# Where to go from here
+
+- Contribute!
+    - Need to improve for reuse & Overlays
+- Implement!
+    - Gateway plugins: Kong, Tyk, Ambassador
+    - Documentation: Readme, SwaggerUI, Stoplight Elements, Optic
+    - Testing & Monitoring: Postman, SoapUI, Moesif, APIMetrics
+
+---
+
+# Summary
+
+- Declare SLA quotas, limits, plans
+- Service/Gateway Configuration
+- SLA/Plans Documentation
+- SLA/Plans Testing, Validation, Compliance
+
+---
+
+# Info
+
+- 1.0 Version
+- Team
+- GitHub
+
+
+---

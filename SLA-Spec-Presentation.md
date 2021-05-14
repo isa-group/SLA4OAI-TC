@@ -2,6 +2,12 @@
 ### OpenAPI SIG
 
 ---
+# Abstract
+Service Level Agreements (SLAs) are a recurrent topic on every APIs on production. However, the documentation of SLAs is not standardized as  API itself. 
+The SLA for OpenAPI Special Interest Group has been working on it to provide a common ground for express SLA definitions.
+In this talk, we will present the current work and the main use cases and benefits it leverages: ranging from SLA documentation, automatic SLA enforcement, automatic middleware configuration, to SLA checking, for example.
+
+---
 # SLA Spec
 
 - DSL for defining a set of metrics and constraints regarding service availability, quality of the service like minimal and maximal throughput, latency, quotas, rate-limits, pricing plans

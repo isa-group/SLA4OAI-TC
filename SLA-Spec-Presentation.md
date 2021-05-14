@@ -34,7 +34,8 @@
 # How it benefits API Consumers
 
 - Accurate SLA/Plans Documentation, know what to expect
-- Clients can understand beyter how to use a Service
+- Clients can understand better how to use a Service
+- Automatically adjust its consumption (e.g. throttling)
 - 3d party assurance for stated availability
 
 ---
@@ -52,11 +53,11 @@
 - Easier to evolve monetization and plans
 
 ---
-# How it Benefits Toolmakers
+# How it benefits Toolmakers
 
 - Provide more value in your products
 - Render customized documentation for each environment
-- Users can use and deploy more gateways since it's easier to cogifre and control them
+- Users can use and deploy more gateways since it's easier to configure and control them
 
 ---
 # Where to go from here
@@ -79,8 +80,8 @@
 ---
 # Info
 
-- 1.0 Version (Link)
-- Team (Link)
-- GitHub (Link)
+- [1.0 Version](https://github.com/isa-group/SLA4OAI-Specification/blob/main/versions/1.0.0-Draft.md)
+- [Team](https://github.com/isa-group/SLA4OAI-TC)
+- [GitHub](https://github.com/isa-group/SLA4OAI-Specification)
 
 ---

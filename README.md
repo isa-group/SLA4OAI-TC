@@ -42,6 +42,18 @@ Perspectives of SLA from the different participants:
 ## Calls
 This section contains the key content and minutes from the different calls.
 
+### 2021.05.04
+
+*Participants: Tim Burks (Apigee), Paul Cray (Apimetrics), Emmanuel Paraskakis (Level 250), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*
+
+Minutes of the meeting:
+1. Discussed next steps and participation on [ASC 2021](https://events.linuxfoundation.org/openapi-asc/).
+
+#### Material
+
+- [Video of the call](https://drive.google.com/file/d/1GAEYUqkBgqfAN4QWbON5y8yOzEVLCwcF/view?usp=sharing)
+
+
 ### 2020.12.17
 
 *Participants: Tim Burks (Apigee), Paul Cray (Apimetrics), Madhurranjan Mohaan (Google), Pablo Fernandez (ISA Group), and Pedro J. Molina (Metadev & ISA Group)*

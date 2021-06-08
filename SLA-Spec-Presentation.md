@@ -78,7 +78,7 @@ Finally, we'll then discuss how you can help improve and extend the spec by cont
     - Gateway plugins: Kong, Tyk, Ambassador
     - Documentation: Readme, SwaggerUI, Stoplight Elements, Optic
     - Testing & Monitoring: Postman, SoapUI, Moesif, APIMetrics
-    - Test Generation, Mocking: Prism, ServiceV, Wireshark, Mockintosh
+    - Test Generation, Mocking: Prism, ServiceV, Wiremock, Mockintosh
 
 ---
 # Summary

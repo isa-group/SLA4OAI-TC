@@ -3,10 +3,13 @@
 
 ---
 # Abstract
-API consumers expect Service Level Agreements (SLAs) for every API in production. However, the specification and documentation of SLAs is not something you can do with OpenAPI Spec.
-The SLA for OpenAPI Special Interest Group has been working on a Spec express SLA definitions that works hand in hand with OAS.
-In this talk, we will present the current state of the Spec, as well as the main use cases and benefits it leverages: ranging from SLA documentation, automatic SLA enforcement, automatic middleware configuration, to SLA verification.
-We'll then discuss how you can help improve and extend the spec by contributing to discussions and tooling.
+API consumers expect Service Level Agreements (SLAs) for production APIs which  specify their capabilities such as rate limits, performance, quality and so on. However, currently the OpenAPI Spec (OAS) does not provide a method to capture SLA requirements within the specification. 
+
+The SLA for OpenAPI Special Interest Group has been working on a Spec for SLA definitions, that works hand in hand with OAS. In this talk, we will present the current state of the Spec, as well as the main use cases and benefits it enables: ranging from SLA documentation, automatic SLA enforcement, automatic middleware configuration, to SLA verification. 
+
+We will demonstrate how to generate OpenAPI with SLAs from their corresponding  Service Level Objectives (SLOs) and how to make use of it in conjunction with your CI/CD pipeline and finally demonstrate measurement to performance and quality SLAs & SLOs with tooling against production APIs.
+
+Finally, we'll then discuss how you can help improve and extend the spec by contributing to discussions and tooling.
 
 ---
 # SLA Spec

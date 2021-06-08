@@ -3,9 +3,10 @@
 
 ---
 # Abstract
-Service Level Agreements (SLAs) are a recurrent topic on every APIs on production. However, the documentation of SLAs is not standardized as  API itself. 
-The SLA for OpenAPI Special Interest Group has been working on it to provide a common ground for express SLA definitions.
-In this talk, we will present the current work and the main use cases and benefits it leverages: ranging from SLA documentation, automatic SLA enforcement, automatic middleware configuration, to SLA checking, for example.
+API consumers expect Service Level Agreements (SLAs) for every API in production. However, the specification and documentation of SLAs is not something you cans do with OpenAPI west.
+The SLA for OpenAPI Special Interest Group has been working on a Spec  express SLA definitions that works hand in hand with OAS.
+In this talk, we will present the current state of the Spec , as well as the main use cases and benefits it leverages: ranging from SLA documentation, automatic SLA enforcement, automatic middleware configuration, to SLA verification,.
+We’ll then discuss how you can help improve and extend the spec by contributing to discussions and tooling.
 
 ---
 # SLA Spec

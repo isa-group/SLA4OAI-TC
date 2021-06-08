@@ -74,6 +74,7 @@ In this talk, we will present the current work and the main use cases and benefi
     - Gateway plugins: Kong, Tyk, Ambassador
     - Documentation: Readme, SwaggerUI, Stoplight Elements, Optic
     - Testing & Monitoring: Postman, SoapUI, Moesif, APIMetrics
+    - Test Generation, Mocking: Prism, ServiceV, Wireshark, Mockintosh
 
 ---
 # Summary

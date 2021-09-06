@@ -18,9 +18,9 @@ In the next sections, you can find the meetings, minutes, material, and the road
 
 Proposed milestones for the specification:
  - **2020Q4** - Proposal of v1 of SLA4OAI
- - **2021Q1** - Open call for tooling/community feedback
- - **2021Q2** - Discuss new v2 features
- - **2021Q3/4** - Work on v2 of SLA4OAI
+ - **2021Q4** - Open call for tooling/community feedback
+ - **2022Q1** - Discuss new v2 features
+ - **2022Q3/4** - Work on v2 of SLA4OAI
 
 ## Consolidated Material
 

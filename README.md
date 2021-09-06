@@ -13,7 +13,7 @@ In the next sections, you can find the meetings, minutes, material, and the road
  - 2018 - OpenAPI Governance Board aproved the creation of a *Specific Interest Group* to coordinate this extension. This group is originally formed by different members from the OAI consortium.
  - 2018 - The specific interest group starts its activities.
  - 2019 - A [common view](docs/2019_ESEC_FSE_IndustryTrack_The_role_of_SLAs_in_the_API_industry.pdf) on the conceptual model and priorities to be addressed is defined.
- - 2021 - [SLA4OAI v1 draft](https://github.com/isa-group/SLA4OAI-Specification/blob/main/versions/1.0.0-Draft.md) is presented to Open API TC as an extension for OAS and opened for community feedback. 
+ - 2021 - [SLA4OAI v1 draft](https://github.com/isa-group/SLA4OAI-Specification/blob/main/versions/1.0.0-Draft.md) is presented to [Open API TSC](https://www.openapis.org/about/technical-steering-committee) as an extension for OAS and opened for community feedback. 
  
 ## Roadmap
 
